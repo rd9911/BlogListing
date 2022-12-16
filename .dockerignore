@@ -1,0 +1,31 @@
+# flyctl launch added from backend/.gitignore
+backend/**/node_modules
+backend/**/package-lock.json
+backend/**/.env
+
+# flyctl launch added from bloglist-frontend/.gitignore
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+bloglist-frontend/node_modules
+bloglist-frontend/.pnp
+bloglist-frontend/**/.pnp.js
+
+# testing
+bloglist-frontend/coverage
+
+# production
+bloglist-frontend/build
+
+# misc
+bloglist-frontend/**/.DS_Store
+bloglist-frontend/**/.env.local
+bloglist-frontend/**/.env.development.local
+bloglist-frontend/**/.env.test.local
+bloglist-frontend/**/.env.production.local
+
+bloglist-frontend/**/npm-debug.log*
+bloglist-frontend/**/yarn-debug.log*
+bloglist-frontend/**/yarn-error.log*
+bloglist-frontend/**/.eslintcache
+fly.toml
