@@ -25,7 +25,6 @@ const Login = () => {
       dispatch(notificationCreator(`${loggedUser.username} has logged in`, 3))
       history.push('/')
     } catch(err) {
-      console.log(err)
       dispatch(notificationCreator('invalid username or password', 3))
     }
     setUsername('')  // GETTING WARNING. FIX IT!!!

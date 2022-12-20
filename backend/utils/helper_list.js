@@ -19,7 +19,6 @@ function unique(array, propertyName) {
 // NEEDS IMPROVEMENT
 const getLikes = (objList) => {
     let uniqueItems = unique(objList, 'author');
-    console.log(uniqueItems);
     const likesRemoved = uniqueItems.map(item => ({...item, likes: 0}));
     for(let i=0; likesRemoved.length > i; i++) {
         for(let b=0; objList.length > b; b++) {

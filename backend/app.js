@@ -10,7 +10,6 @@ const middlewares = require('./utils/middleware');
 const configs = require('./utils/config');
 
 const mongoUrl = configs.mongodbUri;
-console.log(typeof mongoUrl);
 mongoose.connect(String(mongoUrl), { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true });
 
 
